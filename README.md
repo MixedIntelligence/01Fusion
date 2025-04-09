@@ -13,3 +13,11 @@ Welcome to the **Fusion Stack** of Plasma MXI: an open platform to explore AI-op
 
 ## 🔧 Fusion-Core-Monitor Structure
 
+fusion-core-monitor/ 
+├── src/ │ 
+├── sensors/ # Sensor drivers, e.g., temp, B-field, voltage │ 
+├── stream/ # Real-time ingestion + format conversion │ 
+├── calibration/ # Sensor calibration + safety checks 
+├── data/ # Sample test sets, training data 
+├── scripts/ # CLI tools for bootstrapping rigs 
+├── notebooks/ #
