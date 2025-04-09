@@ -1,0 +1,26 @@
+---
+
+## ✅ **3. Prototype Outline: Sensor Input → AI Output**
+
+### 🔄 Workflow: v0.1 – “Virtual LENR Loop”
+
+**Goal**: Take sensor-like input (simulated or real), clean it, feed it into an ML model, get optimization/prediction output.
+
+---
+
+### 🔧 Components
+
+| Component | Tool/Tech | Notes |
+|----------|-----------|-------|
+| Input | Simulated reactor sensor stream | Use fake thermal + electrical data first |
+| Data Handler | Python + Pandas | Format to time-series blocks |
+| ML Model | PyTorch (basic RNN or CNN) | Predict efficiency or failure risk |
+| Output | Optimization dashboard or log | Visualize predicted values + suggest changes |
+| Storage | InfluxDB or HDF5 | Store sensor logs for replay or model retrain |
+
+---
+
+### 🧪 MVP Loop (Simulated)
+
+```plaintext
+[Heat Flow CSV] → [stream_parser.py] → [model_predictor.py] → [dashboard.py]
